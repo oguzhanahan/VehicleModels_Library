@@ -1,0 +1,3691 @@
+Model {
+  Name			  "tren_model"
+  Version		  7.1
+  MdlSubVersion		  0
+  GraphicalInterface {
+    NumRootInports	    0
+    NumRootOutports	    0
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "1.48"
+    NumModelReferences	    0
+    NumTestPointedSignals   0
+  }
+  SavedCharacterEncoding  "windows-1254"
+  SaveDefaultBlockParams  on
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  DataTypeOverride	  "UseLocalSettings"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Mon Apr 23 17:31:00 2012"
+  Creator		  "DOAN"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "DOAN"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Wed Jun 06 00:17:54 2012"
+  RTWModifiedTimeStamp	  0
+  ModelVersionFormat	  "1.%<AutoIncrement:48>"
+  ConfigurationManager	  "None"
+  SimulationMode	  "normal"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  CovModelRefEnable	  "Off"
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BufferReuse		  on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      1
+      Version		      "1.4.0"
+      Array {
+	Type			"Handle"
+	Dimension		7
+	Simulink.SolverCC {
+	  $ObjectID		  2
+	  Version		  "1.4.0"
+	  StartTime		  "0.0"
+	  StopTime		  "10.0"
+	  AbsTol		  "auto"
+	  FixedStep		  "auto"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  SolverMode		  "Auto"
+	  Solver		  "ode45"
+	  SolverName		  "ode45"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Non-adaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  3
+	  Version		  "1.4.0"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveFormat		  "Array"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  InspectSignalLogs	  off
+	  SaveTime		  on
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  4
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    5
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "InitFltsAndDblsToZero"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    PropName		    "DisabledProps"
+	  }
+	  Version		  "1.4.0"
+	  BlockReduction	  on
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnhancedBackFolding	  off
+	  EnforceIntegerDowncast  on
+	  ExpressionFolding	  on
+	  ExpressionDepthLimit	  2147483647
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  on
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  on
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "Off"
+	  AccelVerboseBuild	  off
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  5
+	  Version		  "1.4.0"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"warning"
+	  CheckSSInitialOutputMsg on
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "UseLocalSettings"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  SolverPrmCheckMsg	  "warning"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "error"
+	  MultiTaskCondExecSysMsg "error"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "Use local settings"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  ModelReferenceSimTargetVerbose off
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "warning"
+	  StrictBusMsg		  "Warning"
+	  LoggingUnavailableSignals "error"
+	  BlockIODiagnostic	  "none"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  6
+	  Version		  "1.4.0"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetShiftRightIntArith on
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  7
+	  Version		  "1.4.0"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  ModelReferenceSigSizeVariationType "Always allowed"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  8
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    6
+	    Cell		    "IncludeHyperlinkInReport"
+	    Cell		    "GenerateTraceInfo"
+	    Cell		    "GenerateTraceReport"
+	    Cell		    "GenerateTraceReportSl"
+	    Cell		    "GenerateTraceReportSf"
+	    Cell		    "GenerateTraceReportEml"
+	    PropName		    "DisabledProps"
+	  }
+	  Version		  "1.4.0"
+	  SystemTargetFile	  "grt.tlc"
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  on
+	  TemplateMakefile	  "grt_default_tmf"
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ConfigAtBuild		  off
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  IncludeERTFirstTime	  off
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateCodeInfo	  off
+	  RTWCompilerOptimization "Off"
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      9
+	      Array {
+		Type			"Cell"
+		Dimension		16
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"InsertBlockDesc"
+		Cell			"SFDataObjDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		Cell			"CustomSymbolStrGlobalVar"
+		Cell			"CustomSymbolStrType"
+		Cell			"CustomSymbolStrField"
+		Cell			"CustomSymbolStrFcn"
+		Cell			"CustomSymbolStrBlkIO"
+		Cell			"CustomSymbolStrTmpVar"
+		Cell			"CustomSymbolStrMacro"
+		PropName		"DisabledProps"
+	      }
+	      Version		      "1.4.0"
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses on
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      IncDataTypeInIds	      off
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      SimulinkBlockComments   on
+	      EnableCustomComments    off
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      10
+	      Array {
+		Type			"Cell"
+		Dimension		16
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"CombineOutputUpdateFcns"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"GenerateTestInterfaces"
+		Cell			"ModelStepFunctionPrototypeControlCompliant"
+		Cell			"CPPClassGenCompliant"
+		Cell			"MultiInstanceERTCode"
+		Cell			"PurelyIntegerCode"
+		Cell			"SupportNonFinite"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		Cell			"SupportNonInlinedSFcns"
+		Cell			"PortableWordSizes"
+		PropName		"DisabledProps"
+	      }
+	      Version		      "1.4.0"
+	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      TargetFunctionLibrary   "ANSI_C"
+	      UtilityFuncGeneration   "Auto"
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant on
+	      CompOptLevelCompliant   on
+	      IncludeMdlTerminateFcn  on
+	      CombineOutputUpdateFcns off
+	      SuppressErrorStatus     off
+	      ERTFirstTimeCompliant   off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      EnableShiftOperators    on
+	      ParenthesesLevel	      "Nominal"
+	      PortableWordSizes	      off
+	      ModelStepFunctionPrototypeControlCompliant off
+	      AutosarCompliant	      off
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      ExtModeIntrfLevel	      "Level1"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      GenerateASAP2	      off
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      CurrentDlgPage	      "Solver"
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSet {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    1
+  }
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Clock
+      DisplayTime	      off
+    }
+    Block {
+      BlockType		      Fcn
+      Expr		      "sin(u[1])"
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      DataType		      "auto"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchByCopyingInsideSignal off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Integrator
+      ExternalReset	      "none"
+      InitialConditionSource  "internal"
+      InitialCondition	      "0"
+      LimitOutput	      off
+      UpperSaturationLimit    "inf"
+      LowerSaturationLimit    "-inf"
+      ShowSaturationPort      off
+      ShowStatePort	      off
+      AbsoluteTolerance	      "auto"
+      IgnoreLimit	      off
+      ZeroCross		      on
+      ContinuousStateAttributes	"''"
+    }
+    Block {
+      BlockType		      Mux
+      Inputs		      "4"
+      DisplayOption	      "none"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      NonVirtualBus	      off
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      DataType		      "auto"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      Scope
+      ModelBased	      off
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-5"
+      YMax		      "5"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      CheckFcnCallInpInsideContextMsg off
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      MinMaxOverflowLogging   "UseLocalSettings"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      VariableName	      "simulink_output"
+      MaxDataPoints	      "1000"
+      Decimation	      "1"
+      SampleTime	      "0"
+      FixptAsFi		      off
+    }
+    Block {
+      BlockType		      TransportDelay
+      DelayTime		      "1"
+      InitialOutput	      "0"
+      BufferSize	      "1024"
+      FixedBuffer	      off
+      TransDelayFeedthrough   off
+      PadeOrder		      "0"
+    }
+    Block {
+      BlockType		      DiscretePulseGenerator
+      PulseType		      "Sample based"
+      TimeSource	      "Use simulation time"
+      Amplitude		      "1"
+      Period		      "2"
+      PulseWidth	      "1"
+      PhaseDelay	      "0"
+      SampleTime	      "1"
+      VectorParams1D	      on
+    }
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "tren_model"
+    Location		    [2, 80, 1662, 1007]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      Clock
+      Name		      "Clock"
+      Position		      [990, 65, 1010, 85]
+      Decimation	      "10"
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux"
+      Ports		      [42, 1]
+      Position		      [805, 15, 850, 905]
+      ShowName		      off
+      Inputs		      "42"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      DiscretePulseGenerator
+      Name		      "Pulse\nGenerator"
+      Ports		      [0, 1]
+      Position		      [270, 783, 315, 817]
+      PulseType		      "Time based"
+      Amplitude		      "-0.01"
+      Period		      "0.5"
+      PulseWidth	      "0.025"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope"
+      Ports		      [1]
+      Position		      [1095, 14, 1125, 46]
+      Floating		      off
+      Location		      [188, 390, 1434, 629]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      TimeRange		      "10"
+      YMin		      "-5e-006"
+      YMax		      "1.000000000000001e-006"
+      DataFormat	      "StructureWithTime"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope1"
+      Ports		      [1]
+      Position		      [1060, 629, 1090, 661]
+      Floating		      off
+      Location		      [188, 390, 1434, 629]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      TimeRange		      "10"
+      YMin		      "-5e-006"
+      YMax		      "1.000000000000001e-006"
+      SaveName		      "ScopeData1"
+      DataFormat	      "StructureWithTime"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Subsstem5"
+      Ports		      [1, 2]
+      Position		      [420, 199, 535, 241]
+      ShowName		      off
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      Port {
+	PortNumber		1
+	Name			"x5"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      System {
+	Name			"Subsstem5"
+	Location		[608, 334, 1481, 718]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "In1"
+	  Position		  [110, 103, 140, 117]
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "Fcn5"
+	  Position		  [180, 95, 240, 125]
+	  Expr			  "-(1/mtr5)*(u[3]*(-ktr7-ktr8)+u[9]*(ktr7+ktr8+ktr15+ktr16)+u[17]*(ktr7*Ltr2y2+ktr8*Ltr2y2)+u[23]*(ktr7*Ltr2x1-ktr8*Ltr2x2)+u[29]*(-ktr7*Ltr5x1+ktr8*Ltr5x2-ktr15*Ltr5x1+ktr16*Ltr5x2)+u[4]*(-ctr7-ctr8)+u[10]*(ctr7+ctr8)+u[18]*(ctr7*Ltr2y2+ctr8*Ltr2y2)+u[24]*(ctr7*Ltr2x1-ctr8*Ltr2x2)+u[30]*(-ctr7*Ltr5x1+ctr8*Ltr5x2)+u[37]*(-ktr15)+u[38]*(-ktr16))"
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator8"
+	  Ports			  [1, 1]
+	  Position		  [325, 95, 355, 125]
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator9"
+	  Ports			  [1, 1]
+	  Position		  [430, 95, 460, 125]
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out1"
+	  Position		  [575, 103, 605, 117]
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out2"
+	  Position		  [575, 168, 605, 182]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Line {
+	  SrcBlock		  "Integrator8"
+	  SrcPort		  1
+	  Points		  [25, 0]
+	  Branch {
+	    DstBlock		    "Integrator9"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 65]
+	    DstBlock		    "Out2"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Fcn5"
+	  SrcPort		  1
+	  DstBlock		  "Integrator8"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Integrator9"
+	  SrcPort		  1
+	  DstBlock		  "Out1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "In1"
+	  SrcPort		  1
+	  DstBlock		  "Fcn5"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Subsystem"
+      Ports		      [1, 8]
+      Position		      [420, 718, 535, 882]
+      ShowName		      off
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      Port {
+	PortNumber		1
+	Name			"xy1"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      Port {
+	PortNumber		2
+	Name			"xy2"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      Port {
+	PortNumber		3
+	Name			"xy3"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      Port {
+	PortNumber		4
+	Name			"xy4"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      Port {
+	PortNumber		5
+	Name			"xy5"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      Port {
+	PortNumber		6
+	Name			"xy6"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      Port {
+	PortNumber		7
+	Name			"xy7"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      Port {
+	PortNumber		8
+	Name			"xy8"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      System {
+	Name			"Subsystem"
+	Location		[382, 217, 1259, 719]
+	Open			on
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "In1"
+	  Position		  [160, 88, 190, 102]
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  DiscretePulseGenerator
+	  Name			  "Pulse\nGenerator"
+	  Ports			  [0, 1]
+	  Position		  [90, 163, 135, 197]
+	  PulseType		  "Time based"
+	  Amplitude		  "-0.01"
+	  Period		  "0.5"
+	  PulseWidth		  "0.025"
+	  PhaseDelay		  "(Ltr2y1+Ltr2y2)/Vtr"
+	}
+	Block {
+	  BlockType		  DiscretePulseGenerator
+	  Name			  "Pulse\nGenerator1"
+	  Ports			  [0, 1]
+	  Position		  [90, 298, 135, 332]
+	  PulseType		  "Time based"
+	  Amplitude		  "-0.01"
+	  Period		  "0.5"
+	  PulseWidth		  "0.025"
+	  PhaseDelay		  "(Ltr2y1+Ltr1y1+Ltr1y2+Ltr3y2)/Vtr"
+	}
+	Block {
+	  BlockType		  DiscretePulseGenerator
+	  Name			  "Pulse\nGenerator2"
+	  Ports			  [0, 1]
+	  Position		  [435, 153, 480, 187]
+	  PulseType		  "Time based"
+	  Amplitude		  "-0.01"
+	  Period		  "0.5"
+	  PulseWidth		  "0.025"
+	  PhaseDelay		  "(Ltr2y1+Ltr2y2)/Vtr+0.001"
+	}
+	Block {
+	  BlockType		  DiscretePulseGenerator
+	  Name			  "Pulse\nGenerator3"
+	  Ports			  [0, 1]
+	  Position		  [430, 288, 475, 322]
+	  PulseType		  "Time based"
+	  Amplitude		  "-0.01"
+	  Period		  "0.5"
+	  PulseWidth		  "0.025"
+	  PhaseDelay		  "(Ltr2y1+Ltr1y1+Ltr1y2+Ltr3y2)/Vtr+0.001"
+	}
+	Block {
+	  BlockType		  DiscretePulseGenerator
+	  Name			  "Pulse\nGenerator4"
+	  Ports			  [0, 1]
+	  Position		  [90, 228, 135, 262]
+	  PulseType		  "Time based"
+	  Amplitude		  "-0.01"
+	  Period		  "0.5"
+	  PulseWidth		  "0.025"
+	  PhaseDelay		  "(Ltr2y1+Ltr1y1+Ltr1y2-Ltr3y1)/Vtr"
+	}
+	Block {
+	  BlockType		  DiscretePulseGenerator
+	  Name			  "Pulse\nGenerator5"
+	  Ports			  [0, 1]
+	  Position		  [435, 218, 480, 252]
+	  PulseType		  "Time based"
+	  Amplitude		  "-0.01"
+	  Period		  "0.5"
+	  PulseWidth		  "0.025"
+	  PhaseDelay		  "(Ltr2y1+Ltr1y1+Ltr1y2-Ltr3y1)/Vtr+0.001"
+	}
+	Block {
+	  BlockType		  TransportDelay
+	  Name			  "Transport\nDelay"
+	  Position		  [465, 80, 495, 110]
+	  DelayTime		  "0.001"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out1"
+	  Position		  [320, 133, 350, 147]
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out2"
+	  Position		  [630, 88, 660, 102]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out3"
+	  Position		  [320, 173, 350, 187]
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out4"
+	  Position		  [630, 163, 660, 177]
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out5"
+	  Position		  [325, 238, 355, 252]
+	  Port			  "5"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out6"
+	  Position		  [630, 228, 660, 242]
+	  Port			  "6"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out7"
+	  Position		  [325, 308, 355, 322]
+	  Port			  "7"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out8"
+	  Position		  [630, 298, 660, 312]
+	  Port			  "8"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Line {
+	  SrcBlock		  "In1"
+	  SrcPort		  1
+	  Points		  [25, 0]
+	  Branch {
+	    DstBlock		    "Transport\nDelay"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 45]
+	    DstBlock		    "Out1"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Transport\nDelay"
+	  SrcPort		  1
+	  DstBlock		  "Out2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Pulse\nGenerator1"
+	  SrcPort		  1
+	  DstBlock		  "Out7"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Pulse\nGenerator"
+	  SrcPort		  1
+	  DstBlock		  "Out3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Pulse\nGenerator2"
+	  SrcPort		  1
+	  DstBlock		  "Out4"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Pulse\nGenerator3"
+	  SrcPort		  1
+	  DstBlock		  "Out8"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Pulse\nGenerator4"
+	  SrcPort		  1
+	  DstBlock		  "Out5"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Pulse\nGenerator5"
+	  SrcPort		  1
+	  DstBlock		  "Out6"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Subsystem1"
+      Ports		      [1, 2]
+      Position		      [420, 40, 535, 80]
+      ShowName		      off
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      Port {
+	PortNumber		1
+	Name			"x1"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      System {
+	Name			"Subsystem1"
+	Location		[613, 319, 1299, 773]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "In1"
+	  Position		  [35, 83, 65, 97]
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "Fcn1"
+	  Position		  [125, 75, 185, 105]
+	  Expr			  "-(1/mtr1)*(u[1]*(ktr1+ktr2+ktr3+ktr4)+u[3]*(-ktr1-ktr2)+u[5]*(-ktr3-ktr4)+u[15]*(ktr1*Ltr1y1+ktr2*Ltr1y1-ktr3*Ltr1y2-ktr4*Ltr1y2)+u[21]*(-ktr1*Ltr1x1+ktr2*Ltr1x2-ktr3*Ltr1x1+ktr4*Ltr1x2)+u[23]*(ktr1*Ltr2x1-ktr2*Ltr2x2)+u[25]*(ktr3*Ltr3x1-ktr4*Ltr3x2)+u[2]*(ctr1+ctr2+ctr3+ctr4)+u[4]*(-ctr1-ctr2)+u[6]*(-ctr3-ctr4)+u[16]*(ctr1*Ltr1y1+ctr2*Ltr1y1-ctr3*Ltr1y2-ctr4*Ltr1y2)+u[22]*(-ctr1*Ltr1x1+ctr2*Ltr1x2-ctr3*Ltr1x1+ctr4*Ltr1x2)+u[24]*(ctr1*Ltr2x1-ctr2*Ltr2x2)+u[26]*(ctr3*Ltr3x1-ctr4*Ltr3x2))"
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator"
+	  Ports			  [1, 1]
+	  Position		  [255, 75, 285, 105]
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator1"
+	  Ports			  [1, 1]
+	  Position		  [360, 75, 390, 105]
+	}
+	Block {
+	  BlockType		  Scope
+	  Name			  "Scope"
+	  Ports			  [1]
+	  Position		  [280, 169, 310, 201]
+	  Floating		  off
+	  Location		  [188, 390, 1153, 707]
+	  Open			  off
+	  NumInputPorts		  "1"
+	  List {
+	    ListType		    AxesTitles
+	    axes1		    "%<SignalLabel>"
+	  }
+	  SaveName		  "ScopeData2"
+	  DataFormat		  "StructureWithTime"
+	  SampleTime		  "0"
+	}
+	Block {
+	  BlockType		  ToWorkspace
+	  Name			  "To Workspace14"
+	  Position		  [80, 170, 140, 200]
+	  Orientation		  "left"
+	  VariableName		  "atr1"
+	  MaxDataPoints		  "inf"
+	  SampleTime		  "-1"
+	  SaveFormat		  "Array"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out1"
+	  Position		  [460, 83, 490, 97]
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out2"
+	  Position		  [460, 133, 490, 147]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Line {
+	  SrcBlock		  "Fcn1"
+	  SrcPort		  1
+	  Points		  [25, 0]
+	  Branch {
+	    DstBlock		    "Integrator"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 95]
+	    Branch {
+	      DstBlock		      "Scope"
+	      DstPort		      1
+	    }
+	    Branch {
+	      DstBlock		      "To Workspace14"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "Integrator"
+	  SrcPort		  1
+	  Points		  [30, 0]
+	  Branch {
+	    DstBlock		    "Integrator1"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 50]
+	    DstBlock		    "Out2"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "In1"
+	  SrcPort		  1
+	  DstBlock		  "Fcn1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Integrator1"
+	  SrcPort		  1
+	  DstBlock		  "Out1"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Subsystem10"
+      Ports		      [1, 2]
+      Position		      [420, 400, 535, 440]
+      ShowName		      off
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      Port {
+	PortNumber		1
+	Name			"teta3"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      System {
+	Name			"Subsystem10"
+	Location		[433, 403, 1235, 710]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "In1"
+	  Position		  [110, 103, 140, 117]
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "Fcn10"
+	  Position		  [240, 95, 300, 125]
+	  Expr			  "-(1/Jtr31)*(u[5]*(ktr9*Ltr3y1+ktr10*Ltr3y1-ktr11*Ltr3y2-ktr12*Ltr3y2)+u[11]*(-ktr9*Ltr3y1-ktr10*Ltr3y1)+u[13]*(ktr11*Ltr3y2+ktr12*Ltr3y2)+u[19]*(ktr9*Ltr3y1^2+ktr10*Ltr3y1^2+ktr11*Ltr3y2^2+ktr12*Ltr3y2^2)+u[25]*(-ktr9*Ltr3y1*Ltr3x1+ktr10*Ltr3y1*Ltr3x2+ktr11*Ltr3y2*Ltr3x1-ktr12*Ltr3y2*Ltr3x2)+u[31]*(ktr9*Ltr3y1*Ltr6x1-ktr10*Ltr3y1*Ltr6x2)+u[33]*(-ktr11*Ltr3y2*Ltr7x1+ktr12*Ltr3y2*Ltr7x2)+u[6]*(ctr9*Ltr3y1+ctr10*Ltr3y1-ctr11*Ltr3y2-ctr12*Ltr3y2)+u[12]*(-ctr9*Ltr3y1-ctr10*Ltr3y1)+u[14]*(ctr11*Ltr3y2+ctr12*Ltr3y2)+u[20]*(ctr9*Ltr3y1^2+ctr10*Ltr3y1^2+ctr11*Ltr3y2^2+ctr12*Ltr3y2^2)+u[26]*(-ctr9*Ltr3y1*Ltr3x1+ctr10*Ltr3y1*Ltr3x2+ctr11*Ltr3y2*Ltr3x1-ctr12*Ltr3y2*Ltr3x2)+u[32]*(ctr9*Ltr3y1*Ltr6x1-ctr10*Ltr3y1*Ltr6x2)+u[34]*(-ctr11*Ltr3y2*Ltr7x1+ctr12*Ltr3y2*Ltr7x2))"
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator20"
+	  Ports			  [1, 1]
+	  Position		  [390, 95, 420, 125]
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator21"
+	  Ports			  [1, 1]
+	  Position		  [495, 95, 525, 125]
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out1"
+	  Position		  [610, 103, 640, 117]
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out2"
+	  Position		  [610, 178, 640, 192]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Line {
+	  SrcBlock		  "Integrator20"
+	  SrcPort		  1
+	  Points		  [30, 0]
+	  Branch {
+	    DstBlock		    "Integrator21"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 75]
+	    DstBlock		    "Out2"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Fcn10"
+	  SrcPort		  1
+	  DstBlock		  "Integrator20"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "In1"
+	  SrcPort		  1
+	  DstBlock		  "Fcn10"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Integrator21"
+	  SrcPort		  1
+	  DstBlock		  "Out1"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Subsystem11"
+      Ports		      [1, 2]
+      Position		      [420, 439, 535, 481]
+      ShowName		      off
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      Port {
+	PortNumber		1
+	Name			"teta4"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      System {
+	Name			"Subsystem11"
+	Location		[433, 403, 1275, 701]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "In1"
+	  Position		  [110, 103, 140, 117]
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "Fcn11"
+	  Position		  [205, 95, 265, 125]
+	  Expr			  "-(1/Jtr12)*(u[1]*(-ktr1*Ltr1x1+ktr2*Ltr1x2-ktr3*Ltr1x1+ktr4*Ltr1x2)+u[3]*(ktr1*Ltr1x1-ktr2*Ltr1x2)+u[5]*(ktr3*Ltr1x1-ktr4*Ltr1x2)+u[15]*(-ktr1*Ltr1x1*Ltr1y1+ktr2*Ltr1x2*Ltr1y1+ktr3*Ltr1x1*Ltr1y2-ktr4*Ltr1x2*Ltr1y2)+u[21]*(ktr1*Ltr1x1^2+ktr2*Ltr1x2^2+ktr3*Ltr1x1^2+ktr4*Ltr1x2^2)+u[23]*(-ktr1*Ltr1x1*Ltr2x1-ktr2*Ltr1x2*Ltr2x2)+u[25]*(-ktr3*Ltr1x1*Ltr3x1-ktr4*Ltr1x2*Ltr3x2)+u[2]*(-ctr1*Ltr1x1+ctr2*Ltr1x2-ctr3*Ltr1x1+ctr4*Ltr1x2)+u[4]*(ctr1*Ltr1x1-ctr2*Ltr1x2)+u[6]*(ctr3*Ltr1x1-ctr4*Ltr1x2)+u[16]*(-ctr1*Ltr1x1*Ltr1y1+ctr2*Ltr1x2*Ltr1y1+ctr3*Ltr1x1*Ltr1y2-ctr4*Ltr1x2*Ltr1y2)+u[22]*(ctr1*Ltr1x1^2+ctr2*Ltr1x2^2+ctr3*Ltr1x1^2+ctr4*Ltr1x2^2)+u[24]*(-ctr1*Ltr1x1*Ltr2x1-ctr2*Ltr1x2*Ltr2x2)+u[26]*(-ctr3*Ltr1x1*Ltr3x1-ctr4*Ltr1x2*Ltr3x2))"
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator22"
+	  Ports			  [1, 1]
+	  Position		  [395, 95, 425, 125]
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator23"
+	  Ports			  [1, 1]
+	  Position		  [500, 95, 530, 125]
+	}
+	Block {
+	  BlockType		  ToWorkspace
+	  Name			  "To Workspace"
+	  Position		  [330, 165, 390, 195]
+	  VariableName		  "alfatr4"
+	  MaxDataPoints		  "inf"
+	  SampleTime		  "-1"
+	  SaveFormat		  "Array"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out1"
+	  Position		  [625, 103, 655, 117]
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out2"
+	  Position		  [625, 178, 655, 192]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Line {
+	  SrcBlock		  "Integrator22"
+	  SrcPort		  1
+	  Points		  [30, 0]
+	  Branch {
+	    DstBlock		    "Integrator23"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 75]
+	    DstBlock		    "Out2"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Fcn11"
+	  SrcPort		  1
+	  Points		  [20, 0]
+	  Branch {
+	    DstBlock		    "Integrator22"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 70]
+	    DstBlock		    "To Workspace"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "In1"
+	  SrcPort		  1
+	  DstBlock		  "Fcn11"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Integrator23"
+	  SrcPort		  1
+	  DstBlock		  "Out1"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Subsystem12"
+      Ports		      [1, 2]
+      Position		      [420, 480, 535, 520]
+      ShowName		      off
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      Port {
+	PortNumber		1
+	Name			"teta5"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      System {
+	Name			"Subsystem12"
+	Location		[433, 403, 1337, 701]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "In1"
+	  Position		  [110, 108, 140, 122]
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "Fcn12"
+	  Position		  [260, 100, 320, 130]
+	  Expr			  "-(1/Jtr22)*(u[1]*(ktr1*Ltr2x1-ktr2*Ltr2x2)+u[3]*(-ktr1*Ltr2x1+ktr2*Ltr2x2-ktr5*Ltr2x1+ktr6*Ltr2x2-ktr7*Ltr2x1+ktr8*Ltr2x2)+u[7]*(ktr5*Ltr2x1-ktr6*Ltr2x2)+u[9]*(ktr7*Ltr2x1-ktr8*Ltr2x2)+u[15]*(ktr1*Ltr2x1*Ltr1y1-ktr2*Ltr2x2*Ltr1y1)+u[17]*(-ktr5*Ltr2x1*Ltr2y1+ktr6*Ltr2x2*Ltr2y1+ktr7*Ltr2x1*Ltr2y2-ktr8*Ltr2x2*Ltr2y2)+u[21]*(-ktr1*Ltr2x1*Ltr1x1-ktr2*Ltr2x2*Ltr1x2)+u[23]*(ktr1*Ltr2x1^2+ktr2*Ltr2x2^2+ktr5*Ltr2x1^2+ktr6*Ltr2x2^2+ktr7*Ltr2x1^2+ktr8*Ltr2x2^2)+u[27]*(-ktr5*Ltr2x1*Ltr4x1-ktr6*Ltr2x2*Ltr4x2)+u[29]*(-ktr7*Ltr2x1*Ltr5x1-ktr8*Ltr2x2*Ltr5x2)+u[2]*(ctr1*Ltr2x1-ctr2*Ltr2x2)+u[4]*(-ctr1*Ltr2x1+ctr2*Ltr2x2-ctr5*Ltr2x1+ctr6*Ltr2x2-ctr7*Ltr2x1+ctr8*Ltr2x2)+u[8]*(ctr5*Ltr2x1-ctr6*Ltr2x2)+u[10]*(ctr7*Ltr2x1-ctr8*Ltr2x2)+u[16]*(ctr1*Ltr2x1*Ltr1y1-ctr2*Ltr2x2*Ltr1y1)+u[18]*(-ctr5*Ltr2x1*Ltr2y1+ctr6*Ltr2x2*Ltr2y1+ctr7*Ltr2x1*Ltr2y2-ctr8*Ltr2x2*Ltr2y2)+u[22]*(-ctr1*Ltr2x1*Ltr1x1-ctr2*Ltr2x2*Ltr1x2)+u[24]*(ctr1*Ltr2x1^2+ctr2*Ltr2x2^2+ctr5*Ltr2x1^2+ctr6*Ltr2x2^2+ctr7*Ltr2x1^2+ctr8*Ltr2x2^2)+u[28]*(-ctr5*Ltr2x1*Ltr4x1-ctr6*Ltr2x2*Ltr4x2)+u[30]*(-ctr7*Ltr2x1*Ltr5x1-ctr8*Ltr2x2*Ltr5x2))"
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator14"
+	  Ports			  [1, 1]
+	  Position		  [410, 100, 440, 130]
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator15"
+	  Ports			  [1, 1]
+	  Position		  [515, 100, 545, 130]
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out1"
+	  Position		  [670, 108, 700, 122]
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out2"
+	  Position		  [675, 173, 705, 187]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Line {
+	  SrcBlock		  "Integrator14"
+	  SrcPort		  1
+	  Points		  [35, 0]
+	  Branch {
+	    DstBlock		    "Integrator15"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 65]
+	    DstBlock		    "Out2"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Fcn12"
+	  SrcPort		  1
+	  DstBlock		  "Integrator14"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "In1"
+	  SrcPort		  1
+	  DstBlock		  "Fcn12"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Integrator15"
+	  SrcPort		  1
+	  DstBlock		  "Out1"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Subsystem13"
+      Ports		      [1, 2]
+      Position		      [420, 519, 535, 561]
+      ShowName		      off
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      Port {
+	PortNumber		1
+	Name			"teta6"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      System {
+	Name			"Subsystem13"
+	Location		[437, 321, 1201, 612]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "In1"
+	  Position		  [105, 128, 135, 142]
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "Fcn13"
+	  Position		  [190, 120, 250, 150]
+	  Expr			  "-(1/Jtr32)*(u[1]*(ktr3*Ltr3x1-ktr4*Ltr3x2)+u[5]*(-ktr3*Ltr3x1+ktr4*Ltr3x2-ktr9*Ltr3x1+ktr10*Ltr3x2-ktr11*Ltr3x1+ktr12*Ltr3x2)+u[11]*(ktr9*Ltr3x1-ktr10*Ltr3x2)+u[13]*(ktr11*Ltr3x1-ktr12*Ltr3x2)+u[15]*(-ktr3*Ltr3x1*Ltr1y2+ktr4*Ltr3x2*Ltr1y2)+u[19]*(-ktr9*Ltr3x1*Ltr3y1+ktr10*Ltr3x2*Ltr3y1+ktr11*Ltr3x1*Ltr3y2-ktr12*Ltr3x2*Ltr3y2)+u[21]*(-ktr3*Ltr3x1*Ltr1x1-ktr4*Ltr3x2*Ltr1x2)+u[25]*(ktr3*Ltr3x1^2+ktr4*Ltr3x2^2+ktr9*Ltr3x1^2+ktr10*Ltr3x2^2+ktr11*Ltr3x1^2+ktr12*Ltr3x2^2)+u[31]*(-ktr9*Ltr3x1*Ltr6x1-ktr10*Ltr3x2*Ltr6x2)+u[33]*(-ktr11*Ltr3x1*Ltr7x1-ktr12*Ltr3x2*Ltr7x2)+u[2]*(ctr3*Ltr3x1-ctr4*Ltr3x2)+u[6]*(-ctr3*Ltr3x1+ctr4*Ltr3x2-ctr9*Ltr3x1+ctr10*Ltr3x2-ctr11*Ltr3x1+ctr12*Ltr3x2)+u[12]*(ctr9*Ltr3x1-ctr10*Ltr3x2)+u[14]*(ctr11*Ltr3x1-ctr12*Ltr3x2)+u[16]*(-ctr3*Ltr3x1*Ltr1y2+ctr4*Ltr3x2*Ltr1y2)+u[20]*(-ctr9*Ltr3x1*Ltr3y1+ctr10*Ltr3x2*Ltr3y1+ctr11*Ltr3x1*Ltr3y2-ctr12*Ltr3x2*Ltr3y2)+u[22]*(-ctr3*Ltr3x1*Ltr1x1-ctr4*Ltr3x2*Ltr1x2)+u[26]*(ctr3*Ltr3x1^2+ctr4*Ltr3x2^2+ctr9*Ltr3x1^2+ctr10*Ltr3x2^2+ctr11*Ltr3x1^2+ctr12*Ltr3x2^2)+u[32]*(-ctr9*Ltr3x1*Ltr6x1-ctr10*Ltr3x2*Ltr6x2)+u[34]*(-ctr11*Ltr3x1*Ltr7x1-ctr12*Ltr3x2*Ltr7x2))"
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator26"
+	  Ports			  [1, 1]
+	  Position		  [390, 120, 420, 150]
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator27"
+	  Ports			  [1, 1]
+	  Position		  [495, 120, 525, 150]
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out1"
+	  Position		  [650, 128, 680, 142]
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out2"
+	  Position		  [650, 173, 680, 187]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Line {
+	  SrcBlock		  "Integrator26"
+	  SrcPort		  1
+	  Points		  [25, 0]
+	  Branch {
+	    DstBlock		    "Integrator27"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 45]
+	    DstBlock		    "Out2"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Fcn13"
+	  SrcPort		  1
+	  DstBlock		  "Integrator26"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "In1"
+	  SrcPort		  1
+	  DstBlock		  "Fcn13"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Integrator27"
+	  SrcPort		  1
+	  DstBlock		  "Out1"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Subsystem14"
+      Ports		      [1, 2]
+      Position		      [420, 560, 535, 600]
+      ShowName		      off
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      Port {
+	PortNumber		1
+	Name			"teta7"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      System {
+	Name			"Subsystem14"
+	Location		[433, 403, 1316, 705]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "In1"
+	  Position		  [110, 103, 140, 117]
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "Fcn14"
+	  Position		  [250, 95, 310, 125]
+	  Expr			  "-(1/Jtr4)*(u[3]*(ktr5*Ltr4x1-ktr6*Ltr4x2)+u[7]*(-ktr5*Ltr4x1+ktr6*Ltr4x2-ktr13*Ltr4x1+ktr14*Ltr4x2)+u[17]*(ktr5*Ltr4x1*Ltr2y1-ktr6*Ltr4x2*Ltr2y1)+u[23]*(-ktr5*Ltr4x1*Ltr2x1-ktr6*Ltr4x2*Ltr2x2)+u[27]*(ktr5*Ltr4x1^2+ktr6*Ltr4x2^2+ktr13*Ltr4x1^2+ktr14*Ltr4x2^2)+u[4]*(ctr5*Ltr4x1-ctr6*Ltr4x2)+u[8]*(-ctr5*Ltr4x1+ctr6*Ltr4x2)+u[18]*(ctr5*Ltr4x1*Ltr2y1-ctr6*Ltr4x2*Ltr2y1)+u[24]*(-ctr5*Ltr4x1*Ltr2x1-ctr6*Ltr4x2*Ltr2x2)+u[28]*(ctr5*Ltr4x1^2+ctr6*Ltr4x2^2)+u[35]*(ktr13*Ltr4x1)+u[36]*(-ktr14*Ltr4x2))"
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator28"
+	  Ports			  [1, 1]
+	  Position		  [395, 95, 425, 125]
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator29"
+	  Ports			  [1, 1]
+	  Position		  [500, 95, 530, 125]
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out1"
+	  Position		  [690, 103, 720, 117]
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out2"
+	  Position		  [690, 168, 720, 182]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Line {
+	  SrcBlock		  "Integrator28"
+	  SrcPort		  1
+	  Points		  [30, 0]
+	  Branch {
+	    DstBlock		    "Integrator29"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 65]
+	    DstBlock		    "Out2"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Fcn14"
+	  SrcPort		  1
+	  DstBlock		  "Integrator28"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "In1"
+	  SrcPort		  1
+	  DstBlock		  "Fcn14"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Integrator29"
+	  SrcPort		  1
+	  DstBlock		  "Out1"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Subsystem15"
+      Ports		      [1, 2]
+      Position		      [420, 599, 535, 641]
+      ShowName		      off
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      Port {
+	PortNumber		1
+	Name			"teta8"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      System {
+	Name			"Subsystem15"
+	Location		[433, 403, 1348, 705]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "In1"
+	  Position		  [110, 103, 140, 117]
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "Fcn15"
+	  Position		  [190, 95, 250, 125]
+	  Expr			  "-(1/Jtr5)*(u[3]*(ktr7*Ltr5x1-ktr8*Ltr5x2)+u[9]*(-ktr7*Ltr5x1+ktr8*Ltr5x2-ktr15*Ltr5x1+ktr16*Ltr5x2)+u[17]*(-ktr7*Ltr5x1*Ltr2y2+ktr8*Ltr5x2*Ltr2y2)+u[23]*(-ktr7*Ltr5x1*Ltr2x1-ktr8*Ltr5x2*Ltr2x2)+u[29]*(ktr7*Ltr5x1^2+ktr8*Ltr5x2^2+ktr15*Ltr5x1^2+ktr16*Ltr5x2^2)+u[4]*(ctr7*Ltr5x1-ctr8*Ltr5x2)+u[10]*(-ctr7*Ltr5x1+ctr8*Ltr5x2)+u[18]*(-ctr7*Ltr5x1*Ltr2y2+ctr8*Ltr5x2*Ltr2y2)+u[24]*(-ctr7*Ltr5x1*Ltr2x1-ctr8*Ltr5x2*Ltr2x2)+u[30]*(ctr7*Ltr5x1^2+ctr8*Ltr5x2^2)+u[37]*(ktr15*Ltr5x1)+u[38]*(-ktr16*Ltr5x2))"
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator30"
+	  Ports			  [1, 1]
+	  Position		  [420, 95, 450, 125]
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator31"
+	  Ports			  [1, 1]
+	  Position		  [540, 95, 570, 125]
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out1"
+	  Position		  [640, 103, 670, 117]
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out2"
+	  Position		  [640, 178, 670, 192]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Line {
+	  SrcBlock		  "Integrator30"
+	  SrcPort		  1
+	  Points		  [35, 0]
+	  Branch {
+	    DstBlock		    "Integrator31"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 75]
+	    DstBlock		    "Out2"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Fcn15"
+	  SrcPort		  1
+	  DstBlock		  "Integrator30"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "In1"
+	  SrcPort		  1
+	  DstBlock		  "Fcn15"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Integrator31"
+	  SrcPort		  1
+	  DstBlock		  "Out1"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Subsystem16"
+      Ports		      [1, 2]
+      Position		      [420, 639, 535, 681]
+      ShowName		      off
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      Port {
+	PortNumber		1
+	Name			"teta9"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      System {
+	Name			"Subsystem16"
+	Location		[433, 403, 1525, 708]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "In1"
+	  Position		  [110, 103, 140, 117]
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "Fcn16"
+	  Position		  [360, 95, 420, 125]
+	  Expr			  "-(1/Jtr6)*(u[5]*(ktr9*Ltr6x1-ktr10*Ltr6x2)+u[11]*(-ktr9*Ltr6x1+ktr10*Ltr6x2-ktr17*Ltr6x1+ktr18*Ltr6x2)+u[19]*(ktr9*Ltr6x1*Ltr3y1-ktr10*Ltr6x2*Ltr3y1)+u[25]*(-ktr9*Ltr6x1*Ltr3x1-ktr10*Ltr6x2*Ltr3x2)+u[31]*(ktr9*Ltr6x1^2+ktr10*Ltr6x2^2+ktr17*Ltr6x1^2+ktr18*Ltr6x2^2)+u[6]*(ctr9*Ltr6x1-ctr10*Ltr6x2)+u[12]*(-ctr9*Ltr6x1+ctr10*Ltr6x2)+u[20]*(ctr9*Ltr6x1*Ltr3y1-ctr10*Ltr6x2*Ltr3y1)+u[26]*(-ctr9*Ltr6x1*Ltr3x1-ctr10*Ltr6x2*Ltr3x2)+u[32]*(ctr9*Ltr6x1^2+ctr10*Ltr6x2^2)+u[39]*(ktr17*Ltr6x1)+u[40]*(-ktr18*Ltr6x2))"
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator24"
+	  Ports			  [1, 1]
+	  Position		  [505, 95, 535, 125]
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator25"
+	  Ports			  [1, 1]
+	  Position		  [610, 95, 640, 125]
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out1"
+	  Position		  [810, 103, 840, 117]
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out2"
+	  Position		  [815, 193, 845, 207]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Line {
+	  SrcBlock		  "Integrator24"
+	  SrcPort		  1
+	  Points		  [35, 0]
+	  Branch {
+	    DstBlock		    "Integrator25"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 90]
+	    DstBlock		    "Out2"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Fcn16"
+	  SrcPort		  1
+	  DstBlock		  "Integrator24"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "In1"
+	  SrcPort		  1
+	  DstBlock		  "Fcn16"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Integrator25"
+	  SrcPort		  1
+	  DstBlock		  "Out1"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Subsystem17"
+      Ports		      [1, 2]
+      Position		      [420, 680, 535, 720]
+      ShowName		      off
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      Port {
+	PortNumber		1
+	Name			"teta10"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      System {
+	Name			"Subsystem17"
+	Location		[433, 403, 1346, 713]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "In1"
+	  Position		  [110, 108, 140, 122]
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "Fcn17"
+	  Position		  [230, 100, 290, 130]
+	  Expr			  "-(1/Jtr7)*(u[5]*(ktr11*Ltr7x1-ktr12*Ltr7x2)+u[13]*(-ktr11*Ltr7x1+ktr12*Ltr7x2-ktr19*Ltr7x1+ktr20*Ltr7x2)+u[19]*(-ktr11*Ltr7x1*Ltr3y2+ktr12*Ltr7x2*Ltr3y2)+u[25]*(-ktr11*Ltr7x1*Ltr3x1-ktr12*Ltr7x2*Ltr3x2)+u[33]*(ktr11*Ltr7x1^2+ktr12*Ltr7x2^2+ktr19*Ltr7x1^2+ktr20*Ltr7x2^2)+u[6]*(ctr11*Ltr7x1-ctr12*Ltr7x2)+u[14]*(-ctr11*Ltr7x1+ctr12*Ltr7x2)+u[20]*(-ctr11*Ltr7x1*Ltr3y2+ctr12*Ltr7x2*Ltr3y2)+u[26]*(-ctr11*Ltr7x1*Ltr3x1-ctr12*Ltr7x2*Ltr3x2)+u[34]*(ctr11*Ltr7x1^2+ctr12*Ltr7x2^2)+u[41]*(ktr19*Ltr7x1)+u[42]*(-ktr20*Ltr7x2))"
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator32"
+	  Ports			  [1, 1]
+	  Position		  [435, 100, 465, 130]
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator33"
+	  Ports			  [1, 1]
+	  Position		  [565, 100, 595, 130]
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out1"
+	  Position		  [735, 108, 765, 122]
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out2"
+	  Position		  [735, 188, 765, 202]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Line {
+	  SrcBlock		  "Integrator32"
+	  SrcPort		  1
+	  Points		  [35, 0]
+	  Branch {
+	    DstBlock		    "Integrator33"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 80]
+	    DstBlock		    "Out2"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Fcn17"
+	  SrcPort		  1
+	  DstBlock		  "Integrator32"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "In1"
+	  SrcPort		  1
+	  DstBlock		  "Fcn17"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Integrator33"
+	  SrcPort		  1
+	  DstBlock		  "Out1"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Subsystem2"
+      Ports		      [1, 2]
+      Position		      [420, 80, 535, 120]
+      ShowName		      off
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      Port {
+	PortNumber		1
+	Name			"x2"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      System {
+	Name			"Subsystem2"
+	Location		[433, 403, 1347, 697]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "In1"
+	  Position		  [110, 103, 140, 117]
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "Fcn2"
+	  Position		  [205, 95, 265, 125]
+	  Expr			  "-(1/mtr2)*(u[1]*(-ktr1-ktr2)+u[3]*(ktr1+ktr2+ktr5+ktr6+ktr7+ktr8)+u[7]*(-ktr5-ktr6)+u[9]*(-ktr7-ktr8)+u[15]*(-ktr1*Ltr1y1-ktr2*Ltr1y1)+u[17]*(ktr5*Ltr2y1+ktr6*Ltr2y1-ktr7*Ltr2y2-ktr8*Ltr2y2)+u[21]*(ktr1*Ltr1x1-ktr2*Ltr1x2)+u[23]*(-ktr1*Ltr2x1+ktr2*Ltr2x2-ktr5*Ltr2x1+ktr6*Ltr2x2-ktr7*Ltr2x1+ktr8*Ltr2x2)+u[27]*(ktr5*Ltr4x1-ktr6*Ltr4x2)+u[29]*(ktr7*Ltr5x1-ktr8*Ltr5x2)+u[2]*(-ctr1-ctr2)+u[4]*(ctr1+ctr2+ctr5+ctr6+ctr7+ctr8)+u[8]*(-ctr5-ctr6)+u[10]*(-ctr7-ctr8)+u[16]*(-ctr1*Ltr1y1-ctr2*Ltr1y1)+u[18]*(ctr5*Ltr2y1+ctr6*Ltr2y1-ctr7*Ltr2y2-ctr8*Ltr2y2)+u[22]*(ctr1*Ltr1x1-ctr2*Ltr1x2)+u[24]*(-ctr1*Ltr2x1+ctr2*Ltr2x2-ctr5*Ltr2x1+ctr6*Ltr2x2-ctr7*Ltr2x1+ctr8*Ltr2x2)+u[28]*(ctr5*Ltr4x1-ctr6*Ltr4x2)+u[30]*(ctr7*Ltr5x1-ctr8*Ltr5x2))"
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator2"
+	  Ports			  [1, 1]
+	  Position		  [345, 95, 375, 125]
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator3"
+	  Ports			  [1, 1]
+	  Position		  [450, 95, 480, 125]
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out1"
+	  Position		  [580, 103, 610, 117]
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out2"
+	  Position		  [580, 153, 610, 167]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Line {
+	  SrcBlock		  "Fcn2"
+	  SrcPort		  1
+	  DstBlock		  "Integrator2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Integrator2"
+	  SrcPort		  1
+	  Points		  [25, 0]
+	  Branch {
+	    DstBlock		    "Integrator3"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 50]
+	    DstBlock		    "Out2"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "In1"
+	  SrcPort		  1
+	  DstBlock		  "Fcn2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Integrator3"
+	  SrcPort		  1
+	  DstBlock		  "Out1"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Subsystem3"
+      Ports		      [1, 2]
+      Position		      [420, 119, 535, 161]
+      ShowName		      off
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      Port {
+	PortNumber		1
+	Name			"x3"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      System {
+	Name			"Subsystem3"
+	Location		[433, 403, 1252, 753]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "In1"
+	  Position		  [110, 103, 140, 117]
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "Fcn3"
+	  Position		  [175, 95, 235, 125]
+	  Expr			  "-(1/mtr3)*(u[1]*(-ktr3-ktr4)+u[5]*(ktr3+ktr4+ktr9+ktr10+ktr11+ktr12)+u[11]*(-ktr9-ktr10)+u[13]*(-ktr11-ktr12)+u[15]*(ktr3*Ltr1y2+ktr4*Ltr1y2)+u[19]*(ktr9*Ltr3y1+ktr10*Ltr3y1-ktr11*Ltr3y2-ktr12*Ltr3y2)+u[21]*(ktr3*Ltr1x1-ktr4*Ltr1x2)+u[25]*(-ktr3*Ltr3x1+ktr4*Ltr3x2-ktr9*Ltr3x1+ktr10*Ltr3x2-ktr11*Ltr3x1+ktr12*Ltr3x2)+u[31]*(ktr9*Ltr6x1-ktr10*Ltr6x2)+u[33]*(ktr11*Ltr7x1-ktr12*Ltr7x2)+u[2]*(-ctr3-ctr4)+u[6]*(ctr3+ctr4+ctr9+ctr10+ctr11+ctr12)+u[12]*(-ctr9-ctr10)+u[14]*(-ctr11-ctr12)+u[16]*(ctr3*Ltr1y2+ctr4*Ltr1y2)+u[20]*(ctr9*Ltr3y1+ctr10*Ltr3y1-ctr11*Ltr3y2-ctr12*Ltr3y2)+u[22]*(ctr3*Ltr1x1-ctr4*Ltr1x2)+u[26]*(-ctr3*Ltr3x1+ctr4*Ltr3x2-ctr9*Ltr3x1+ctr10*Ltr3x2-ctr11*Ltr3x1+ctr12*Ltr3x2)+u[32]*(ctr9*Ltr6x1-ctr10*Ltr6x2)+u[34]*(ctr11*Ltr7x1-ctr12*Ltr7x2))"
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator4"
+	  Ports			  [1, 1]
+	  Position		  [395, 95, 425, 125]
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator5"
+	  Ports			  [1, 1]
+	  Position		  [500, 95, 530, 125]
+	}
+	Block {
+	  BlockType		  Scope
+	  Name			  "Scope"
+	  Ports			  [1]
+	  Position		  [360, 184, 390, 216]
+	  Floating		  off
+	  Location		  [188, 390, 1153, 707]
+	  Open			  off
+	  NumInputPorts		  "1"
+	  List {
+	    ListType		    AxesTitles
+	    axes1		    "%<SignalLabel>"
+	  }
+	  SaveName		  "ScopeData3"
+	  DataFormat		  "StructureWithTime"
+	  SampleTime		  "0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out1"
+	  Position		  [635, 103, 665, 117]
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out2"
+	  Position		  [635, 168, 665, 182]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Line {
+	  SrcBlock		  "Fcn3"
+	  SrcPort		  1
+	  Points		  [50, 0]
+	  Branch {
+	    DstBlock		    "Integrator4"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 90]
+	    DstBlock		    "Scope"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Integrator4"
+	  SrcPort		  1
+	  Points		  [30, 0]
+	  Branch {
+	    DstBlock		    "Integrator5"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 65]
+	    DstBlock		    "Out2"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Integrator5"
+	  SrcPort		  1
+	  DstBlock		  "Out1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "In1"
+	  SrcPort		  1
+	  DstBlock		  "Fcn3"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Subsystem4"
+      Ports		      [1, 2]
+      Position		      [420, 161, 535, 199]
+      ShowName		      off
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      Port {
+	PortNumber		1
+	Name			"x4"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      System {
+	Name			"Subsystem4"
+	Location		[439, 463, 1251, 786]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "In1"
+	  Position		  [110, 103, 140, 117]
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "Fcn4"
+	  Position		  [210, 95, 270, 125]
+	  Expr			  "-(1/mtr4)*(u[3]*(-ktr5-ktr6)+u[7]*(ktr5+ktr6+ktr13+ktr14)+u[17]*(-ktr5*Ltr2y1-ktr6*Ltr2y1)+u[23]*(ktr5*Ltr2x1-ktr6*Ltr2x2)+u[27]*(-ktr5*Ltr4x1+ktr6*Ltr4x2-ktr13*Ltr4x1+ktr14*Ltr4x2)+u[4]*(-ctr5-ctr6)+u[8]*(ctr5+ctr6)+u[18]*(-ctr5*Ltr2y1-ctr6*Ltr2y1)+u[24]*(ctr5*Ltr2x1-ctr6*Ltr2x2)+u[28]*(-ctr5*Ltr4x1+ctr6*Ltr4x2)+u[35]*(-ktr13)+u[36]*(-ktr14))"
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator6"
+	  Ports			  [1, 1]
+	  Position		  [350, 95, 380, 125]
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator7"
+	  Ports			  [1, 1]
+	  Position		  [455, 95, 485, 125]
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out1"
+	  Position		  [585, 103, 615, 117]
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out2"
+	  Position		  [585, 163, 615, 177]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Line {
+	  SrcBlock		  "Fcn4"
+	  SrcPort		  1
+	  DstBlock		  "Integrator6"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Integrator6"
+	  SrcPort		  1
+	  Points		  [35, 0]
+	  Branch {
+	    DstBlock		    "Integrator7"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 60]
+	    DstBlock		    "Out2"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "In1"
+	  SrcPort		  1
+	  DstBlock		  "Fcn4"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Integrator7"
+	  SrcPort		  1
+	  DstBlock		  "Out1"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Subsystem6"
+      Ports		      [1, 2]
+      Position		      [420, 240, 535, 280]
+      ShowName		      off
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      Port {
+	PortNumber		1
+	Name			"x6"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      System {
+	Name			"Subsystem6"
+	Location		[433, 403, 1380, 703]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "In1"
+	  Position		  [110, 103, 140, 117]
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "Fcn6"
+	  Position		  [220, 95, 280, 125]
+	  Expr			  "-(1/mtr6)*(u[5]*(-ktr9-ktr10)+u[11]*(ktr9+ktr10+ktr17+ktr18)+u[19]*(-ktr9*Ltr3y1-ktr10*Ltr3y1)+u[25]*(ktr9*Ltr3x1-ktr10*Ltr3x2)+u[31]*(-ktr9*Ltr6x1+ktr10*Ltr6x2-ktr17*Ltr6x1+ktr18*Ltr6x2)+u[6]*(-ctr9-ctr10)+u[12]*(ctr9+ctr10)+u[20]*(-ctr9*Ltr3y1-ctr10*Ltr3y1)+u[26]*(ctr9*Ltr3x1-ctr10*Ltr3x2)+u[32]*(-ctr9*Ltr6x1+ctr10*Ltr6x2)+u[39]*(-ktr17)+u[40]*(-ktr18))"
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator10"
+	  Ports			  [1, 1]
+	  Position		  [360, 95, 390, 125]
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator11"
+	  Ports			  [1, 1]
+	  Position		  [465, 95, 495, 125]
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out1"
+	  Position		  [670, 103, 700, 117]
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out2"
+	  Position		  [670, 168, 700, 182]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Line {
+	  SrcBlock		  "Fcn6"
+	  SrcPort		  1
+	  DstBlock		  "Integrator10"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Integrator10"
+	  SrcPort		  1
+	  Points		  [35, 0]
+	  Branch {
+	    DstBlock		    "Integrator11"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 65]
+	    DstBlock		    "Out2"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "In1"
+	  SrcPort		  1
+	  DstBlock		  "Fcn6"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Integrator11"
+	  SrcPort		  1
+	  DstBlock		  "Out1"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Subsystem7"
+      Ports		      [1, 2]
+      Position		      [420, 278, 535, 322]
+      ShowName		      off
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      Port {
+	PortNumber		1
+	Name			"x7"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      System {
+	Name			"Subsystem7"
+	Location		[433, 403, 1292, 703]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "In1"
+	  Position		  [110, 103, 140, 117]
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "Fcn7"
+	  Position		  [190, 95, 250, 125]
+	  Expr			  "-(1/mtr7)*(u[5]*(-ktr11-ktr12)+u[13]*(ktr11+ktr12+ktr19+ktr20)+u[19]*(ktr11*Ltr3y2+ktr12*Ltr3y2)+u[25]*(ktr11*Ltr3x1-ktr12*Ltr3x2)+u[33]*(-ktr11*Ltr7x1+ktr12*Ltr7x2-ktr19*Ltr7x1+ktr20*Ltr7x2)+u[6]*(-ctr11-ctr12)+u[14]*(ctr11+ctr12)+u[20]*(ctr11*Ltr3y2+ctr12*Ltr3y2)+u[26]*(ctr11*Ltr3x1-ctr12*Ltr3x2)+u[34]*(-ctr11*Ltr7x1+ctr12*Ltr7x2)+u[41]*(-ktr19)+u[42]*(-ktr20))"
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator12"
+	  Ports			  [1, 1]
+	  Position		  [345, 95, 375, 125]
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator13"
+	  Ports			  [1, 1]
+	  Position		  [450, 95, 480, 125]
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out1"
+	  Position		  [615, 103, 645, 117]
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out2"
+	  Position		  [620, 168, 650, 182]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Line {
+	  SrcBlock		  "Integrator12"
+	  SrcPort		  1
+	  Points		  [20, 0]
+	  Branch {
+	    DstBlock		    "Integrator13"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 65]
+	    DstBlock		    "Out2"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Fcn7"
+	  SrcPort		  1
+	  DstBlock		  "Integrator12"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "In1"
+	  SrcPort		  1
+	  DstBlock		  "Fcn7"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Integrator13"
+	  SrcPort		  1
+	  DstBlock		  "Out1"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Subsystem8"
+      Ports		      [1, 2]
+      Position		      [420, 319, 535, 361]
+      ShowName		      off
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      Port {
+	PortNumber		1
+	Name			"teta1"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      System {
+	Name			"Subsystem8"
+	Location		[433, 403, 1267, 702]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "In1"
+	  Position		  [110, 108, 140, 122]
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "Fcn8"
+	  Position		  [175, 100, 235, 130]
+	  Expr			  "-(1/Jtr11)*(u[1]*(ktr1*Ltr1y1+ktr2*Ltr1y1-ktr3*Ltr1y2-ktr4*Ltr1y2)+u[3]*(-ktr1*Ltr1y1-ktr2*Ltr1y1)+u[5]*(ktr3*Ltr1y2+ktr4*Ltr1y2)+u[15]*(ktr1*Ltr1y1^2+ktr2*Ltr1y1^2+ktr3*Ltr1y2^2+ktr4*Ltr1y2^2)+u[21]*(-ktr1*Ltr1y1*Ltr1x1+ktr2*Ltr1y1*Ltr1x2+ktr3*Ltr1y2*Ltr1x1-ktr4*Ltr1y2*Ltr1x2)+u[23]*(ktr1*Ltr1y1*Ltr2x1-ktr2*Ltr1y1*Ltr2x2)+u[25]*(-ktr3*Ltr1y2*Ltr3x1+ktr4*Ltr1y2*Ltr3x2)+u[2]*(ctr1*Ltr1y1+ctr2*Ltr1y1-ctr3*Ltr1y2-ctr4*Ltr1y2)+u[4]*(-ctr1*Ltr1y1-ctr2*Ltr1y1)+u[6]*(ctr3*Ltr1y2+ctr4*Ltr1y2)+u[16]*(ctr1*Ltr1y1^2+ctr2*Ltr1y1^2+ctr3*Ltr1y2^2+ctr4*Ltr1y2^2)+u[22]*(-ctr1*Ltr1y1*Ltr1x1+ctr2*Ltr1y1*Ltr1x2+ctr3*Ltr1y2*Ltr1x1-ctr4*Ltr1y2*Ltr1x2)+u[24]*(ctr1*Ltr1y1*Ltr2x1-ctr2*Ltr1y1*Ltr2x2)+u[26]*(-ctr3*Ltr1y2*Ltr3x1+ctr4*Ltr1y2*Ltr3x2))"
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator16"
+	  Ports			  [1, 1]
+	  Position		  [320, 100, 350, 130]
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator17"
+	  Ports			  [1, 1]
+	  Position		  [425, 100, 455, 130]
+	}
+	Block {
+	  BlockType		  ToWorkspace
+	  Name			  "To Workspace"
+	  Position		  [285, 190, 345, 220]
+	  VariableName		  "alfatr1"
+	  MaxDataPoints		  "inf"
+	  SampleTime		  "-1"
+	  SaveFormat		  "Array"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out1"
+	  Position		  [595, 108, 625, 122]
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out2"
+	  Position		  [595, 178, 625, 192]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Line {
+	  SrcBlock		  "Integrator16"
+	  SrcPort		  1
+	  Points		  [30, 0]
+	  Branch {
+	    DstBlock		    "Integrator17"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 70]
+	    DstBlock		    "Out2"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Fcn8"
+	  SrcPort		  1
+	  Points		  [20, 0]
+	  Branch {
+	    DstBlock		    "Integrator16"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 90]
+	    DstBlock		    "To Workspace"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "In1"
+	  SrcPort		  1
+	  DstBlock		  "Fcn8"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Integrator17"
+	  SrcPort		  1
+	  DstBlock		  "Out1"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Subsystem9"
+      Ports		      [1, 2]
+      Position		      [420, 358, 535, 402]
+      ShowName		      off
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      Port {
+	PortNumber		1
+	Name			"teta2"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      System {
+	Name			"Subsystem9"
+	Location		[433, 403, 1303, 677]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "In1"
+	  Position		  [110, 98, 140, 112]
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "Fcn9"
+	  Position		  [225, 90, 285, 120]
+	  Expr			  "-(1/Jtr21)*(u[3]*(ktr5*Ltr2y1+ktr6*Ltr2y1-ktr7*Ltr2y2-ktr8*Ltr2y2)+u[7]*(-ktr5*Ltr2y1-ktr6*Ltr2y1)+u[9]*(ktr7*Ltr2y2+ktr8*Ltr2y2)+u[17]*(ktr5*Ltr2y1^2+ktr6*Ltr2y1^2+ktr7*Ltr2y2^2+ktr8*Ltr2y2^2)+u[23]*(-ktr5*Ltr2y1*Ltr2x1+ktr6*Ltr2y1*Ltr2x2+ktr7*Ltr2y2*Ltr2x1-ktr8*Ltr2y2*Ltr2x2)+u[27]*(ktr5*Ltr2y1*Ltr4x1-ktr6*Ltr2y1*Ltr4x2)+u[29]*(-ktr7*Ltr2y2*Ltr5x1+ktr8*Ltr2y2*Ltr5x2)+u[4]*(ctr5*Ltr2y1+ctr6*Ltr2y1-ctr7*Ltr2y2-ctr8*Ltr2y2)+u[8]*(-ctr5*Ltr2y1-ctr6*Ltr2y1)+u[10]*(ctr7*Ltr2y2+ctr8*Ltr2y2)+u[18]*(ctr5*Ltr2y1^2+ctr6*Ltr2y1^2+ctr7*Ltr2y2^2+ctr8*Ltr2y2^2)+u[24]*(-ctr5*Ltr2y1*Ltr2x1+ctr6*Ltr2y1*Ltr2x2+ctr7*Ltr2y2*Ltr2x1-ctr8*Ltr2y2*Ltr2x2)+u[28]*(ctr5*Ltr2y1*Ltr4x1-ctr6*Ltr2y1*Ltr4x2)+u[30]*(-ctr7*Ltr2y2*Ltr5x1+ctr8*Ltr2y2*Ltr5x2))"
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator18"
+	  Ports			  [1, 1]
+	  Position		  [400, 90, 430, 120]
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator19"
+	  Ports			  [1, 1]
+	  Position		  [505, 90, 535, 120]
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out1"
+	  Position		  [605, 98, 635, 112]
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out2"
+	  Position		  [605, 173, 635, 187]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Line {
+	  SrcBlock		  "Integrator18"
+	  SrcPort		  1
+	  Points		  [25, 0]
+	  Branch {
+	    DstBlock		    "Integrator19"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 75]
+	    DstBlock		    "Out2"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Fcn9"
+	  SrcPort		  1
+	  DstBlock		  "Integrator18"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "In1"
+	  SrcPort		  1
+	  DstBlock		  "Fcn9"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Integrator19"
+	  SrcPort		  1
+	  DstBlock		  "Out1"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace"
+      Position		      [1075, 60, 1135, 90]
+      VariableName	      "ttr"
+      MaxDataPoints	      "inf"
+      SampleTime	      "-1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace1"
+      Position		      [915, 45, 975, 75]
+      VariableName	      "xtr1"
+      MaxDataPoints	      "inf"
+      SampleTime	      "-1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace10"
+      Position		      [1195, 765, 1255, 795]
+      VariableName	      "xytr4"
+      MaxDataPoints	      "inf"
+      SampleTime	      "-1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace11"
+      Position		      [930, 785, 990, 815]
+      VariableName	      "xytr5"
+      MaxDataPoints	      "inf"
+      SampleTime	      "-1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace12"
+      Position		      [1030, 805, 1090, 835]
+      VariableName	      "xytr6"
+      MaxDataPoints	      "inf"
+      SampleTime	      "-1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace13"
+      Position		      [1195, 845, 1255, 875]
+      VariableName	      "xytr8"
+      MaxDataPoints	      "inf"
+      SampleTime	      "-1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace2"
+      Position		      [915, 100, 975, 130]
+      VariableName	      "xtr2"
+      MaxDataPoints	      "inf"
+      SampleTime	      "-1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace3"
+      Position		      [915, 150, 975, 180]
+      VariableName	      "xtr3"
+      MaxDataPoints	      "inf"
+      SampleTime	      "-1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace4"
+      Position		      [925, 265, 985, 295]
+      VariableName	      "xtr7"
+      MaxDataPoints	      "inf"
+      SampleTime	      "-1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace5"
+      Position		      [925, 325, 985, 355]
+      VariableName	      "tetatr1"
+      MaxDataPoints	      "inf"
+      SampleTime	      "-1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace6"
+      Position		      [925, 705, 985, 735]
+      VariableName	      "xytr1"
+      MaxDataPoints	      "inf"
+      SampleTime	      "-1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace7"
+      Position		      [1110, 825, 1170, 855]
+      VariableName	      "xytr7"
+      MaxDataPoints	      "inf"
+      SampleTime	      "-1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace8"
+      Position		      [1025, 725, 1085, 755]
+      VariableName	      "xytr2"
+      MaxDataPoints	      "inf"
+      SampleTime	      "-1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace9"
+      Position		      [1110, 745, 1170, 775]
+      VariableName	      "xytr3"
+      MaxDataPoints	      "inf"
+      SampleTime	      "-1"
+      SaveFormat	      "Array"
+    }
+    Line {
+      SrcBlock		      "Mux"
+      SrcPort		      1
+      Points		      [20, 0; 0, -450; -560, 0; 0, 50]
+      Branch {
+	Points			[0, 40]
+	Branch {
+	  Points		  [0, 40]
+	  Branch {
+	    Points		    [0, 40]
+	    Branch {
+	      Points		      [0, 40]
+	      Branch {
+		Points			[0, 40]
+		Branch {
+		  Points		  [0, 40]
+		  Branch {
+		    Points		    [0, 40]
+		    Branch {
+		    Points		    [0, 40]
+		    Branch {
+		    Points		    [0, 40]
+		    Branch {
+		    Points		    [0, 40]
+		    Branch {
+		    Points		    [0, 40]
+		    Branch {
+		    Points		    [0, 40]
+		    Branch {
+		    Points		    [0, 40]
+		    Branch {
+		    Points		    [0, 40]
+		    Branch {
+		    Points		    [0, 40]
+		    Branch {
+		    Points		    [0, 40]
+		    DstBlock		    "Subsystem17"
+		    DstPort		    1
+		    }
+		    Branch {
+		    DstBlock		    "Subsystem16"
+		    DstPort		    1
+		    }
+		    }
+		    Branch {
+		    DstBlock		    "Subsystem15"
+		    DstPort		    1
+		    }
+		    }
+		    Branch {
+		    DstBlock		    "Subsystem14"
+		    DstPort		    1
+		    }
+		    }
+		    Branch {
+		    DstBlock		    "Subsystem13"
+		    DstPort		    1
+		    }
+		    }
+		    Branch {
+		    DstBlock		    "Subsystem12"
+		    DstPort		    1
+		    }
+		    }
+		    Branch {
+		    DstBlock		    "Subsystem11"
+		    DstPort		    1
+		    }
+		    }
+		    Branch {
+		    DstBlock		    "Subsystem10"
+		    DstPort		    1
+		    }
+		    }
+		    Branch {
+		    DstBlock		    "Subsystem9"
+		    DstPort		    1
+		    }
+		    }
+		    Branch {
+		    DstBlock		    "Subsystem8"
+		    DstPort		    1
+		    }
+		  }
+		  Branch {
+		    DstBlock		    "Subsystem7"
+		    DstPort		    1
+		  }
+		}
+		Branch {
+		  DstBlock		  "Subsystem6"
+		  DstPort		  1
+		}
+	      }
+	      Branch {
+		DstBlock		"Subsstem5"
+		DstPort			1
+	      }
+	    }
+	    Branch {
+	      DstBlock		      "Subsystem4"
+	      DstPort		      1
+	    }
+	  }
+	  Branch {
+	    DstBlock		    "Subsystem3"
+	    DstPort		    1
+	  }
+	}
+	Branch {
+	  DstBlock		  "Subsystem2"
+	  DstPort		  1
+	}
+      }
+      Branch {
+	DstBlock		"Subsystem1"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Clock"
+      SrcPort		      1
+      DstBlock		      "To Workspace"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Pulse\nGenerator"
+      SrcPort		      1
+      DstBlock		      "Subsystem"
+      DstPort		      1
+    }
+    Line {
+      Name		      "x1"
+      Labels		      [0, 0]
+      SrcBlock		      "Subsystem1"
+      SrcPort		      1
+      Points		      [210, 0]
+      Branch {
+	Points			[0, -20]
+	DstBlock		"Scope"
+	DstPort			1
+      }
+      Branch {
+	Points			[25, 0]
+	Branch {
+	  DstBlock		  "Mux"
+	  DstPort		  1
+	}
+	Branch {
+	  Points		  [0, 10]
+	  DstBlock		  "To Workspace1"
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      Labels		      [0, 0]
+      SrcBlock		      "Subsystem1"
+      SrcPort		      2
+      DstBlock		      "Mux"
+      DstPort		      2
+    }
+    Line {
+      Name		      "x2"
+      Labels		      [0, 0]
+      SrcBlock		      "Subsystem2"
+      SrcPort		      1
+      Points		      [225, 0]
+      Branch {
+	DstBlock		"Mux"
+	DstPort			3
+      }
+      Branch {
+	Points			[0, 25]
+	DstBlock		"To Workspace2"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Subsystem2"
+      SrcPort		      2
+      DstBlock		      "Mux"
+      DstPort		      4
+    }
+    Line {
+      Name		      "x3"
+      Labels		      [0, 0]
+      SrcBlock		      "Subsystem3"
+      SrcPort		      1
+      Points		      [230, 0]
+      Branch {
+	DstBlock		"Mux"
+	DstPort			5
+      }
+      Branch {
+	Points			[0, 35]
+	DstBlock		"To Workspace3"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Subsystem3"
+      SrcPort		      2
+      DstBlock		      "Mux"
+      DstPort		      6
+    }
+    Line {
+      Name		      "x4"
+      Labels		      [0, 0]
+      SrcBlock		      "Subsystem4"
+      SrcPort		      1
+      DstBlock		      "Mux"
+      DstPort		      7
+    }
+    Line {
+      SrcBlock		      "Subsystem4"
+      SrcPort		      2
+      DstBlock		      "Mux"
+      DstPort		      8
+    }
+    Line {
+      Name		      "x5"
+      Labels		      [0, 0]
+      SrcBlock		      "Subsstem5"
+      SrcPort		      1
+      DstBlock		      "Mux"
+      DstPort		      9
+    }
+    Line {
+      SrcBlock		      "Subsstem5"
+      SrcPort		      2
+      DstBlock		      "Mux"
+      DstPort		      10
+    }
+    Line {
+      Name		      "x6"
+      Labels		      [0, 0]
+      SrcBlock		      "Subsystem6"
+      SrcPort		      1
+      DstBlock		      "Mux"
+      DstPort		      11
+    }
+    Line {
+      SrcBlock		      "Subsystem6"
+      SrcPort		      2
+      DstBlock		      "Mux"
+      DstPort		      12
+    }
+    Line {
+      Name		      "x7"
+      Labels		      [0, 0]
+      SrcBlock		      "Subsystem7"
+      SrcPort		      1
+      Points		      [200, 0]
+      Branch {
+	DstBlock		"Mux"
+	DstPort			13
+      }
+      Branch {
+	Points			[0, -10]
+	DstBlock		"To Workspace4"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Subsystem7"
+      SrcPort		      2
+      DstBlock		      "Mux"
+      DstPort		      14
+    }
+    Line {
+      Name		      "teta1"
+      Labels		      [0, 0]
+      SrcBlock		      "Subsystem8"
+      SrcPort		      1
+      Points		      [200, 0]
+      Branch {
+	DstBlock		"Mux"
+	DstPort			15
+      }
+      Branch {
+	Points			[0, 10]
+	DstBlock		"To Workspace5"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Subsystem8"
+      SrcPort		      2
+      DstBlock		      "Mux"
+      DstPort		      16
+    }
+    Line {
+      Name		      "teta2"
+      Labels		      [0, 0]
+      SrcBlock		      "Subsystem9"
+      SrcPort		      1
+      DstBlock		      "Mux"
+      DstPort		      17
+    }
+    Line {
+      SrcBlock		      "Subsystem9"
+      SrcPort		      2
+      DstBlock		      "Mux"
+      DstPort		      18
+    }
+    Line {
+      Name		      "teta3"
+      Labels		      [0, 0]
+      SrcBlock		      "Subsystem10"
+      SrcPort		      1
+      DstBlock		      "Mux"
+      DstPort		      19
+    }
+    Line {
+      SrcBlock		      "Subsystem10"
+      SrcPort		      2
+      DstBlock		      "Mux"
+      DstPort		      20
+    }
+    Line {
+      Name		      "teta4"
+      Labels		      [0, 0]
+      SrcBlock		      "Subsystem11"
+      SrcPort		      1
+      DstBlock		      "Mux"
+      DstPort		      21
+    }
+    Line {
+      SrcBlock		      "Subsystem11"
+      SrcPort		      2
+      DstBlock		      "Mux"
+      DstPort		      22
+    }
+    Line {
+      Name		      "teta5"
+      Labels		      [0, 0]
+      SrcBlock		      "Subsystem12"
+      SrcPort		      1
+      DstBlock		      "Mux"
+      DstPort		      23
+    }
+    Line {
+      SrcBlock		      "Subsystem12"
+      SrcPort		      2
+      DstBlock		      "Mux"
+      DstPort		      24
+    }
+    Line {
+      Name		      "teta6"
+      Labels		      [0, 0]
+      SrcBlock		      "Subsystem13"
+      SrcPort		      1
+      DstBlock		      "Mux"
+      DstPort		      25
+    }
+    Line {
+      SrcBlock		      "Subsystem13"
+      SrcPort		      2
+      DstBlock		      "Mux"
+      DstPort		      26
+    }
+    Line {
+      Name		      "teta7"
+      Labels		      [0, 0]
+      SrcBlock		      "Subsystem14"
+      SrcPort		      1
+      DstBlock		      "Mux"
+      DstPort		      27
+    }
+    Line {
+      SrcBlock		      "Subsystem14"
+      SrcPort		      2
+      DstBlock		      "Mux"
+      DstPort		      28
+    }
+    Line {
+      Name		      "teta8"
+      Labels		      [0, 0]
+      SrcBlock		      "Subsystem15"
+      SrcPort		      1
+      DstBlock		      "Mux"
+      DstPort		      29
+    }
+    Line {
+      SrcBlock		      "Subsystem15"
+      SrcPort		      2
+      DstBlock		      "Mux"
+      DstPort		      30
+    }
+    Line {
+      Name		      "teta9"
+      Labels		      [0, 0]
+      SrcBlock		      "Subsystem16"
+      SrcPort		      1
+      DstBlock		      "Mux"
+      DstPort		      31
+    }
+    Line {
+      SrcBlock		      "Subsystem16"
+      SrcPort		      2
+      DstBlock		      "Mux"
+      DstPort		      32
+    }
+    Line {
+      Name		      "teta10"
+      Labels		      [0, 0]
+      SrcBlock		      "Subsystem17"
+      SrcPort		      1
+      DstBlock		      "Mux"
+      DstPort		      33
+    }
+    Line {
+      SrcBlock		      "Subsystem17"
+      SrcPort		      2
+      DstBlock		      "Mux"
+      DstPort		      34
+    }
+    Line {
+      Name		      "xy1"
+      Labels		      [0, 0]
+      SrcBlock		      "Subsystem"
+      SrcPort		      1
+      Points		      [190, 0]
+      Branch {
+	DstBlock		"Mux"
+	DstPort			35
+      }
+      Branch {
+	Points			[0, -10; 150, 0]
+	Branch {
+	  DstBlock		  "To Workspace6"
+	  DstPort		  1
+	}
+	Branch {
+	  Points		  [0, -75]
+	  DstBlock		  "Scope1"
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      Name		      "xy2"
+      Labels		      [0, 0]
+      SrcBlock		      "Subsystem"
+      SrcPort		      2
+      Points		      [190, 0]
+      Branch {
+	DstBlock		"Mux"
+	DstPort			36
+      }
+      Branch {
+	Points			[0, -10]
+	DstBlock		"To Workspace8"
+	DstPort			1
+      }
+    }
+    Line {
+      Name		      "xy3"
+      Labels		      [0, 0]
+      SrcBlock		      "Subsystem"
+      SrcPort		      3
+      Points		      [190, 0]
+      Branch {
+	DstBlock		"Mux"
+	DstPort			37
+      }
+      Branch {
+	Points			[0, -10]
+	DstBlock		"To Workspace9"
+	DstPort			1
+      }
+    }
+    Line {
+      Name		      "xy4"
+      Labels		      [0, 0]
+      SrcBlock		      "Subsystem"
+      SrcPort		      4
+      Points		      [190, 0]
+      Branch {
+	DstBlock		"Mux"
+	DstPort			38
+      }
+      Branch {
+	Points			[0, -10]
+	DstBlock		"To Workspace10"
+	DstPort			1
+      }
+    }
+    Line {
+      Name		      "xy5"
+      Labels		      [0, 0]
+      SrcBlock		      "Subsystem"
+      SrcPort		      5
+      Points		      [190, 0]
+      Branch {
+	DstBlock		"Mux"
+	DstPort			39
+      }
+      Branch {
+	Points			[0, -10]
+	DstBlock		"To Workspace11"
+	DstPort			1
+      }
+    }
+    Line {
+      Name		      "xy6"
+      Labels		      [0, 0]
+      SrcBlock		      "Subsystem"
+      SrcPort		      6
+      Points		      [190, 0]
+      Branch {
+	DstBlock		"Mux"
+	DstPort			40
+      }
+      Branch {
+	Points			[0, -10]
+	DstBlock		"To Workspace12"
+	DstPort			1
+      }
+    }
+    Line {
+      Name		      "xy7"
+      Labels		      [0, 0]
+      SrcBlock		      "Subsystem"
+      SrcPort		      7
+      Points		      [190, 0]
+      Branch {
+	DstBlock		"Mux"
+	DstPort			41
+      }
+      Branch {
+	Points			[0, -10]
+	DstBlock		"To Workspace7"
+	DstPort			1
+      }
+    }
+    Line {
+      Name		      "xy8"
+      Labels		      [0, 0]
+      SrcBlock		      "Subsystem"
+      SrcPort		      8
+      Points		      [190, 0]
+      Branch {
+	DstBlock		"Mux"
+	DstPort			42
+      }
+      Branch {
+	Points			[0, -10]
+	DstBlock		"To Workspace13"
+	DstPort			1
+      }
+    }
+  }
+}
